@@ -42,7 +42,7 @@
     		    "unit": "KGM",
                 "value": 28840
     	    },
-		    "maxiumuExternalPressure":
+		    "maximumExternalPressure":
             {
 			    "unit": "BAR",
 			    "value":2
@@ -293,7 +293,7 @@
         },
         "rackingForce":
         {
-            "unit":"KNT?",
+            "unit":"NEW",
             "value":25
         },
         "castings":
@@ -396,7 +396,7 @@
             },
             "conductivity":
              {
-                "unit":"D53 (watt per metre kelvin - thermal conductivity (lambda value): a measure of the product's ability to conduct heat)",
+                "unit":"D53",
                 "value":27.5
             }
         },
@@ -1180,7 +1180,7 @@
         "isIntegral":true,
         "materialType":"PTFE envelope",
         "manufacturer":"Perolo",
-        "parCode":"A1234",
+        "partCode":"A1234",
         "serialNumber":"123456",
         "clearanceHeight": 
             {
@@ -1296,7 +1296,7 @@
     {
         "isSteamHeatingFitted":true,
         "isElectricBlanketHeatingFitted":false,
-        "isElectricGlycoldHeatingFitted":false,
+        "isElectricGlycolHeatingFitted":false,
         "isElectricGlycolHeatingAndCoolingFitted":false,
         "steamHeatingSystem":
         {
