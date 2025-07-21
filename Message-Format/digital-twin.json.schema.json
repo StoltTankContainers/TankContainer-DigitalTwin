@@ -1,0 +1,5269 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ISOTankDigitalTwin": {
+      "type": "object",
+      "properties": {
+        "tankBasicInformation": {
+          "type": "object",
+          "properties": {
+            "assetIdentification": {
+              "type": "object",
+              "properties": {
+                "manufacturerSeialNumber": {
+                  "type": "string"
+                },
+                "manufacturerName": {
+                  "type": "string"
+                },
+                "manufactureDate": {
+                  "type": "string"
+                },
+                "initialCertificateIssuanceDate": {
+                  "type": "string"
+                },
+                "initialHydraulicTestDate": {
+                  "type": "string"
+                },
+                "BICCode": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "checkDigit": {
+                  "type": "string"
+                },
+                "owner": {
+                  "type": "string"
+                },
+                "operator": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "manufacturerSeialNumber",
+                "manufacturerName",
+                "manufactureDate",
+                "initialCertificateIssuanceDate",
+                "initialHydraulicTestDate",
+                "BICCode",
+                "serialNumber",
+                "checkDigit",
+                "owner",
+                "operator"
+              ]
+            },
+            "designSpecification": {
+              "type": "object",
+              "properties": {
+                "RIDADRTankCode": {
+                  "type": "string"
+                },
+                "TCode": {
+                  "type": "string"
+                },
+                "classificationSociety": {
+                  "type": "string"
+                },
+                "tareWeight": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "maximumCapacity": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "maximumGrossWeight": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "maximumPayload": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "maxiumuExternalPressure": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "maximumVesselTemperature": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "minimumVesselTemperature": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "typeApprovals": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "category": {
+                          "type": "string"
+                        },
+                        "approvalBy": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "approvalBody": {
+                                  "type": "string"
+                                },
+                                "version": {
+                                  "type": "string"
+                                },
+                                "workingPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                },
+                                "testPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "approvalBody",
+                                "version",
+                                "workingPressure",
+                                "testPressure"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "approvalBody": {
+                                  "type": "string"
+                                },
+                                "version": {
+                                  "type": "string"
+                                },
+                                "workingPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                },
+                                "testPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "approvalBody",
+                                "version",
+                                "workingPressure",
+                                "testPressure"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "approvalBody": {
+                                  "type": "string"
+                                },
+                                "version": {
+                                  "type": "string"
+                                },
+                                "workingPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                },
+                                "testPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "approvalBody",
+                                "version",
+                                "workingPressure",
+                                "testPressure"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "approvalBody": {
+                                  "type": "string"
+                                },
+                                "version": {
+                                  "type": "string"
+                                },
+                                "workingPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                },
+                                "testPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "approvalBody",
+                                "version",
+                                "workingPressure",
+                                "testPressure"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "category",
+                        "approvalBy"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "category": {
+                          "type": "string"
+                        },
+                        "approvalBy": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "approvalBody": {
+                                  "type": "string"
+                                },
+                                "version": {
+                                  "type": "string"
+                                },
+                                "workingPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                },
+                                "testPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "approvalBody",
+                                "version",
+                                "workingPressure",
+                                "testPressure"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "approvalBody": {
+                                  "type": "string"
+                                },
+                                "version": {
+                                  "type": "string"
+                                },
+                                "workingPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                },
+                                "testPressure": {
+                                  "type": "object",
+                                  "properties": {
+                                    "unit": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "integer"
+                                    }
+                                  },
+                                  "required": [
+                                    "unit",
+                                    "value"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "approvalBody",
+                                "version",
+                                "workingPressure",
+                                "testPressure"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "category",
+                        "approvalBy"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "RIDADRTankCode",
+                "TCode",
+                "classificationSociety",
+                "tareWeight",
+                "maximumCapacity",
+                "maximumGrossWeight",
+                "maximumPayload",
+                "maxiumuExternalPressure",
+                "maximumVesselTemperature",
+                "minimumVesselTemperature",
+                "typeApprovals"
+              ]
+            }
+          },
+          "required": [
+            "assetIdentification",
+            "designSpecification"
+          ]
+        },
+        "exteriorMarkings": {
+          "type": "object",
+          "properties": {
+            "isOperatorLogoDisplayed": {
+              "type": "boolean"
+            },
+            "isAdditionalLabelBoardFitted": {
+              "type": "boolean"
+            },
+            "additionalLabelBoards": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "labelBoardType": {
+                      "type": "string"
+                    },
+                    "labelBoardLocation": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "labelBoardType",
+                    "labelBoardLocation"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "labelBoardType": {
+                      "type": "string"
+                    },
+                    "labelBoardLocation": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "labelBoardType",
+                    "labelBoardLocation"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "labelBoardType": {
+                      "type": "string"
+                    },
+                    "labelBoardLocation": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "labelBoardType",
+                    "labelBoardLocation"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "isOperatorLogoDisplayed",
+            "isAdditionalLabelBoardFitted",
+            "additionalLabelBoards"
+          ]
+        },
+        "tankShell": {
+          "type": "object",
+          "properties": {
+            "tankVessel": {
+              "type": "object",
+              "properties": {
+                "designCode": {
+                  "type": "string"
+                },
+                "numberOfCompartments": {
+                  "type": "integer"
+                },
+                "capacity": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "nominalCapacity": {
+                      "type": "integer"
+                    },
+                    "measuredCapacity": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "nominalCapacity",
+                    "measuredCapacity"
+                  ]
+                },
+                "newBuildInternalFinish": {
+                  "type": "string"
+                },
+                "newBuildSurfacePolish": {
+                  "type": "string"
+                },
+                "vacuumStiffeningRingsQuantity": {
+                  "type": "integer"
+                },
+                "steelReferenceThickness": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "integer"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ]
+                }
+              },
+              "required": [
+                "designCode",
+                "numberOfCompartments",
+                "capacity",
+                "newBuildInternalFinish",
+                "newBuildSurfacePolish",
+                "vacuumStiffeningRingsQuantity",
+                "steelReferenceThickness"
+              ]
+            },
+            "barrel": {
+              "type": "object",
+              "properties": {
+                "materialType": {
+                  "type": "string"
+                },
+                "isCoated": {
+                  "type": "boolean"
+                },
+                "coatingType": {
+                  "type": "string"
+                },
+                "isLined": {
+                  "type": "boolean"
+                },
+                "liningType": {
+                  "type": "string"
+                },
+                "minimumThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "corrosionAllowance": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "manufacturedThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "currentThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "materialType",
+                "isCoated",
+                "coatingType",
+                "isLined",
+                "liningType",
+                "minimumThickness",
+                "corrosionAllowance",
+                "manufacturedThickness",
+                "currentThickness"
+              ]
+            },
+            "dishEnds": {
+              "type": "object",
+              "properties": {
+                "materialType": {
+                  "type": "string"
+                },
+                "minimumThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "corrosionAllowance": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "manufacturedThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "currentThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "materialType",
+                "minimumThickness",
+                "corrosionAllowance",
+                "manufacturedThickness",
+                "currentThickness"
+              ]
+            },
+            "baffles": {
+              "type": "object",
+              "properties": {
+                "bafflesFitted": {
+                  "type": "string"
+                },
+                "fitmentType": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "manufacturedThickness": {
+                  "type": "object",
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "unit": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "unit"
+                  ]
+                },
+                "numberOfSpaceSections": {
+                  "type": "integer"
+                },
+                "numberOfBaffleSets": {
+                  "type": "integer"
+                },
+                "baffleDesign": {
+                  "type": "string"
+                },
+                "baffleProfile": {
+                  "type": "string"
+                },
+                "areaCoveragePercent": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "bafflesFitted",
+                "fitmentType",
+                "materialType",
+                "manufacturedThickness",
+                "numberOfSpaceSections",
+                "numberOfBaffleSets",
+                "baffleDesign",
+                "baffleProfile",
+                "areaCoveragePercent"
+              ]
+            }
+          },
+          "required": [
+            "tankVessel",
+            "barrel",
+            "dishEnds",
+            "baffles"
+          ]
+        },
+        "frame": {
+          "type": "object",
+          "properties": {
+            "frameType": {
+              "type": "string"
+            },
+            "materialType": {
+              "type": "string"
+            },
+            "ISO668FreightContainerDesignation": {
+              "type": "string"
+            },
+            "ISO6346DimensionCode": {
+              "type": "string"
+            },
+            "dimensions": {
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "type": "string"
+                },
+                "length": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "width": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "unit",
+                "length",
+                "height",
+                "width"
+              ]
+            },
+            "paint": {
+              "type": "object",
+              "properties": {
+                "colour": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "colour",
+                "type"
+              ]
+            },
+            "stackingCapacity": {
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "unit",
+                "value"
+              ]
+            },
+            "rackingForce": {
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "unit",
+                "value"
+              ]
+            },
+            "castings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "type": "string"
+                    },
+                    "standardDesignation": {
+                      "type": "string"
+                    },
+                    "numberOfPairs": {
+                      "type": "integer"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "dimensionCode": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "position",
+                    "standardDesignation",
+                    "numberOfPairs",
+                    "materialType",
+                    "dimensionCode"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "type": "string"
+                    },
+                    "standardDesignation": {
+                      "type": "string"
+                    },
+                    "numberOfPairs": {
+                      "type": "integer"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "dimensionCode": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "position",
+                    "standardDesignation",
+                    "numberOfPairs",
+                    "materialType",
+                    "dimensionCode"
+                  ]
+                }
+              ]
+            },
+            "isBottomLongitudinalMemberFitted": {
+              "type": "boolean"
+            },
+            "isTopLongitudinalMemberFitted": {
+              "type": "boolean"
+            },
+            "isMisStackingProtectionFitted": {
+              "type": "boolean"
+            },
+            "earthConnectionLocation": {
+              "type": "string"
+            },
+            "isBullBarFitted": {
+              "type": "boolean"
+            },
+            "bullBarMaterialType": {
+              "type": "string"
+            },
+            "isTopFrameProtectionExtensionFitted": {
+              "type": "boolean"
+            },
+            "isForkLiftCompatible": {
+              "type": "boolean"
+            },
+            "isCollapsibleHandrailFitted": {
+              "type": "boolean"
+            },
+            "collapsibleHandrails": {
+              "type": "object",
+              "properties": {
+                "numberFitted": {
+                  "type": "integer"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "isGroundOperated": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "numberFitted",
+                "location",
+                "isGroundOperated"
+              ]
+            }
+          },
+          "required": [
+            "frameType",
+            "materialType",
+            "ISO668FreightContainerDesignation",
+            "ISO6346DimensionCode",
+            "dimensions",
+            "paint",
+            "stackingCapacity",
+            "rackingForce",
+            "castings",
+            "isBottomLongitudinalMemberFitted",
+            "isTopLongitudinalMemberFitted",
+            "isMisStackingProtectionFitted",
+            "earthConnectionLocation",
+            "isBullBarFitted",
+            "bullBarMaterialType",
+            "isTopFrameProtectionExtensionFitted",
+            "isForkLiftCompatible",
+            "isCollapsibleHandrailFitted",
+            "collapsibleHandrails"
+          ]
+        },
+        "walkwayAndLadders": {
+          "type": "object",
+          "properties": {
+            "walkway": {
+              "type": "object",
+              "properties": {
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "coverageType": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "standardDesignation": {
+                  "type": "string"
+                },
+                "dimensions": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "longitudinalWidth": {
+                      "type": "integer"
+                    },
+                    "longitudinalDepth": {
+                      "type": "integer"
+                    },
+                    "overallLength": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "longitudinalWidth",
+                    "longitudinalDepth",
+                    "overallLength"
+                  ]
+                }
+              },
+              "required": [
+                "isFitted",
+                "coverageType",
+                "materialType",
+                "standardDesignation",
+                "dimensions"
+              ]
+            },
+            "ladders": {
+              "type": "object",
+              "properties": {
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "quantityOfLadders": {
+                  "type": "integer"
+                },
+                "ladderSpecification": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "isHandgripFitted": {
+                          "type": "boolean"
+                        },
+                        "frontRearPosition": {
+                          "type": "string"
+                        },
+                        "sidePosition": {
+                          "type": "string"
+                        },
+                        "constructionType": {
+                          "type": "string"
+                        },
+                        "toeClearance": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "value"
+                          ]
+                        },
+                        "handgripPosition": {
+                          "type": "string"
+                        },
+                        "materialType": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "isHandgripFitted",
+                        "frontRearPosition",
+                        "sidePosition",
+                        "constructionType",
+                        "toeClearance",
+                        "handgripPosition",
+                        "materialType"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "isHandgripFitted": {
+                          "type": "boolean"
+                        },
+                        "frontRearPosition": {
+                          "type": "string"
+                        },
+                        "sidePosition": {
+                          "type": "string"
+                        },
+                        "constructionType": {
+                          "type": "string"
+                        },
+                        "toeClearance": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "value"
+                          ]
+                        },
+                        "handgripPosition": {
+                          "type": "string"
+                        },
+                        "materialType": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "isHandgripFitted",
+                        "frontRearPosition",
+                        "sidePosition",
+                        "constructionType",
+                        "toeClearance",
+                        "handgripPosition",
+                        "materialType"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "isFitted",
+                "quantityOfLadders",
+                "ladderSpecification"
+              ]
+            }
+          },
+          "required": [
+            "walkway",
+            "ladders"
+          ]
+        },
+        "insulationAndCladding": {
+          "type": "object",
+          "properties": {
+            "isInsulationFitted": {
+              "type": "boolean"
+            },
+            "insulationMaterial": {
+              "type": "object",
+              "properties": {
+                "mainBarrel": {
+                  "type": "string"
+                },
+                "dishEnds": {
+                  "type": "string"
+                },
+                "detailAreas": {
+                  "type": "string"
+                },
+                "nominalThickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "majorityOfBarrel": {
+                      "type": "number"
+                    },
+                    "specificAreas": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "majorityOfBarrel",
+                    "specificAreas"
+                  ]
+                },
+                "conductivity": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "mainBarrel",
+                "dishEnds",
+                "detailAreas",
+                "nominalThickness",
+                "conductivity"
+              ]
+            },
+            "isCladdingFitted": {
+              "type": "boolean"
+            },
+            "claddingMaterial": {
+              "type": "object",
+              "properties": {
+                "mainBarrel": {
+                  "type": "string"
+                },
+                "dishEnds": {
+                  "type": "string"
+                },
+                "thickness": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "mainBarrel": {
+                      "type": "number"
+                    },
+                    "dishEnds": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "mainBarrel",
+                    "dishEnds"
+                  ]
+                }
+              },
+              "required": [
+                "mainBarrel",
+                "dishEnds",
+                "thickness"
+              ]
+            },
+            "isCladdingBandFitted": {
+              "type": "boolean"
+            },
+            "numberOfCladdingBands": {
+              "type": "integer"
+            },
+            "claddingSectionWidth": {
+              "type": "object",
+              "properties": {
+                "unit": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "unit",
+                "value"
+              ]
+            }
+          },
+          "required": [
+            "isInsulationFitted",
+            "insulationMaterial",
+            "isCladdingFitted",
+            "claddingMaterial",
+            "isCladdingBandFitted",
+            "numberOfCladdingBands",
+            "claddingSectionWidth"
+          ]
+        },
+        "spillBoxesAndCompartments": {
+          "type": "object",
+          "properties": {
+            "isSpillBoxFitted": {
+              "type": "boolean"
+            },
+            "numberOfSpillBoxes": {
+              "type": "integer"
+            },
+            "spillBoxDetails": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "isInsulated": {
+                      "type": "boolean"
+                    },
+                    "isLidFitted": {
+                      "type": "boolean"
+                    },
+                    "lidLockingMechanism": {
+                      "type": "string"
+                    },
+                    "lidOpening": {
+                      "type": "object",
+                      "properties": {
+                        "direction": {
+                          "type": "string"
+                        },
+                        "structure": {
+                          "type": "string"
+                        },
+                        "method": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "direction",
+                        "structure",
+                        "method"
+                      ]
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isCustomsSealsCompatible": {
+                      "type": "boolean"
+                    },
+                    "isHeatingSystemFitted": {
+                      "type": "boolean"
+                    },
+                    "drainageTubeMaterial": {
+                      "type": "string"
+                    },
+                    "drainageTubeRouting": {
+                      "type": "string"
+                    },
+                    "drainageTubeDimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fitmentPosition",
+                    "isInsulated",
+                    "isLidFitted",
+                    "lidLockingMechanism",
+                    "lidOpening",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isCustomsSealsCompatible",
+                    "isHeatingSystemFitted",
+                    "drainageTubeMaterial",
+                    "drainageTubeRouting",
+                    "drainageTubeDimensions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "isInsulated": {
+                      "type": "boolean"
+                    },
+                    "isLidFitted": {
+                      "type": "boolean"
+                    },
+                    "lidLockingMechanism": {
+                      "type": "string"
+                    },
+                    "lidOpening": {
+                      "type": "object",
+                      "properties": {
+                        "direction": {
+                          "type": "string"
+                        },
+                        "structure": {
+                          "type": "string"
+                        },
+                        "method": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "direction",
+                        "structure",
+                        "method"
+                      ]
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isCustomsSealsCompatible": {
+                      "type": "boolean"
+                    },
+                    "isHeatingSystemFitted": {
+                      "type": "boolean"
+                    },
+                    "drainageTubeMaterial": {
+                      "type": "string"
+                    },
+                    "drainageTubeRouting": {
+                      "type": "string"
+                    },
+                    "drainageTubeDimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fitmentPosition",
+                    "isInsulated",
+                    "isLidFitted",
+                    "lidLockingMechanism",
+                    "lidOpening",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isCustomsSealsCompatible",
+                    "isHeatingSystemFitted",
+                    "drainageTubeMaterial",
+                    "drainageTubeRouting",
+                    "drainageTubeDimensions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "isInsulated": {
+                      "type": "boolean"
+                    },
+                    "isLidFitted": {
+                      "type": "boolean"
+                    },
+                    "lidLockingMechanism": {
+                      "type": "string"
+                    },
+                    "lidOpening": {
+                      "type": "object",
+                      "properties": {
+                        "direction": {
+                          "type": "string"
+                        },
+                        "structure": {
+                          "type": "string"
+                        },
+                        "method": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "direction",
+                        "structure",
+                        "method"
+                      ]
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isCustomsSealsCompatible": {
+                      "type": "boolean"
+                    },
+                    "isHeatingSystemFitted": {
+                      "type": "boolean"
+                    },
+                    "drainageTubeMaterial": {
+                      "type": "string"
+                    },
+                    "drainageTubeRouting": {
+                      "type": "string"
+                    },
+                    "drainageTubeDimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fitmentPosition",
+                    "isInsulated",
+                    "isLidFitted",
+                    "lidLockingMechanism",
+                    "lidOpening",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isCustomsSealsCompatible",
+                    "isHeatingSystemFitted",
+                    "drainageTubeMaterial",
+                    "drainageTubeRouting",
+                    "drainageTubeDimensions"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "isInsulated": {
+                      "type": "boolean"
+                    },
+                    "isLidFitted": {
+                      "type": "boolean"
+                    },
+                    "lidLockingMechanism": {
+                      "type": "string"
+                    },
+                    "lidOpening": {
+                      "type": "object",
+                      "properties": {
+                        "direction": {
+                          "type": "string"
+                        },
+                        "structure": {
+                          "type": "string"
+                        },
+                        "method": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "direction",
+                        "structure",
+                        "method"
+                      ]
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isCustomsSealsCompatible": {
+                      "type": "boolean"
+                    },
+                    "isHeatingSystemFitted": {
+                      "type": "boolean"
+                    },
+                    "drainageTubeMaterial": {
+                      "type": "string"
+                    },
+                    "drainageTubeRouting": {
+                      "type": "string"
+                    },
+                    "drainageTubeDimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fitmentPosition",
+                    "isInsulated",
+                    "isLidFitted",
+                    "lidLockingMechanism",
+                    "lidOpening",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isCustomsSealsCompatible",
+                    "isHeatingSystemFitted",
+                    "drainageTubeMaterial",
+                    "drainageTubeRouting",
+                    "drainageTubeDimensions"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "isSpillBoxFitted",
+            "numberOfSpillBoxes",
+            "spillBoxDetails"
+          ]
+        },
+        "manway": {
+          "type": "object",
+          "properties": {
+            "isDipstickBracketFitted": {
+              "type": "boolean"
+            },
+            "isDipstickFitted": {
+              "type": "boolean"
+            },
+            "isBaffleHatchFitted": {
+              "type": "boolean"
+            },
+            "quantityOfBaffleHatches": {
+              "type": "integer"
+            },
+            "manlid": {
+              "type": "object",
+              "properties": {
+                "closureType": {
+                  "type": "string"
+                },
+                "handNutType": {
+                  "type": "string"
+                },
+                "handNutMaterial": {
+                  "type": "string"
+                },
+                "numberOfClosures": {
+                  "type": "integer"
+                },
+                "dimensions": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "diameter": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "diameter"
+                  ]
+                },
+                "gasketMaterial": {
+                  "type": "string"
+                },
+                "isInsulatationFitted": {
+                  "type": "boolean"
+                },
+                "insulationMaterial": {
+                  "type": "string"
+                },
+                "isCoated": {
+                  "type": "boolean"
+                },
+                "isLined": {
+                  "type": "boolean"
+                },
+                "coatingMaterial": {
+                  "type": "string"
+                },
+                "liningType": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "closureType",
+                "handNutType",
+                "handNutMaterial",
+                "numberOfClosures",
+                "dimensions",
+                "gasketMaterial",
+                "isInsulatationFitted",
+                "insulationMaterial",
+                "isCoated",
+                "isLined",
+                "coatingMaterial",
+                "liningType"
+              ]
+            },
+            "baffleHatches": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "type": "string"
+                    },
+                    "closureType": {
+                      "type": "string"
+                    },
+                    "handNutType": {
+                      "type": "string"
+                    },
+                    "handNutMaterial": {
+                      "type": "string"
+                    },
+                    "quantityOfClosures": {
+                      "type": "integer"
+                    },
+                    "dimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    },
+                    "gasketMaterial": {
+                      "type": "string"
+                    },
+                    "isInsulationFitted": {
+                      "type": "boolean"
+                    },
+                    "insulationMaterial": {
+                      "type": "string"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "position",
+                    "closureType",
+                    "handNutType",
+                    "handNutMaterial",
+                    "quantityOfClosures",
+                    "dimensions",
+                    "gasketMaterial",
+                    "isInsulationFitted",
+                    "insulationMaterial",
+                    "isCoated",
+                    "isLined",
+                    "coatingMaterial",
+                    "liningType"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "type": "string"
+                    },
+                    "closureType": {
+                      "type": "string"
+                    },
+                    "handNutType": {
+                      "type": "string"
+                    },
+                    "handNutMaterial": {
+                      "type": "string"
+                    },
+                    "quantityOfClosures": {
+                      "type": "integer"
+                    },
+                    "dimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    },
+                    "gasketMaterial": {
+                      "type": "string"
+                    },
+                    "isInsulationFitted": {
+                      "type": "boolean"
+                    },
+                    "insulationMaterial": {
+                      "type": "string"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "position",
+                    "closureType",
+                    "handNutType",
+                    "handNutMaterial",
+                    "quantityOfClosures",
+                    "dimensions",
+                    "gasketMaterial",
+                    "isInsulationFitted",
+                    "insulationMaterial",
+                    "isCoated",
+                    "isLined",
+                    "coatingMaterial",
+                    "liningType"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "position": {
+                      "type": "string"
+                    },
+                    "closureType": {
+                      "type": "string"
+                    },
+                    "handNutType": {
+                      "type": "string"
+                    },
+                    "handNutMaterial": {
+                      "type": "string"
+                    },
+                    "quantityOfClosures": {
+                      "type": "integer"
+                    },
+                    "dimensions": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "diameter": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "diameter"
+                      ]
+                    },
+                    "gasketMaterial": {
+                      "type": "string"
+                    },
+                    "isInsulationFitted": {
+                      "type": "boolean"
+                    },
+                    "insulationMaterial": {
+                      "type": "string"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "position",
+                    "closureType",
+                    "handNutType",
+                    "handNutMaterial",
+                    "quantityOfClosures",
+                    "dimensions",
+                    "gasketMaterial",
+                    "isInsulationFitted",
+                    "insulationMaterial",
+                    "isCoated",
+                    "isLined",
+                    "coatingMaterial",
+                    "liningType"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "isDipstickBracketFitted",
+            "isDipstickFitted",
+            "isBaffleHatchFitted",
+            "quantityOfBaffleHatches",
+            "manlid",
+            "baffleHatches"
+          ]
+        },
+        "safetyReliefValves": {
+          "type": "object",
+          "properties": {
+            "reliefValveQuantity": {
+              "type": "integer"
+            },
+            "reliefValves": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "isRuptureDiscFitted": {
+                      "type": "boolean"
+                    },
+                    "position": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "connectionType": {
+                      "type": "string"
+                    },
+                    "isVacuumCombinationType": {
+                      "type": "boolean"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningMaterial": {
+                      "type": "string"
+                    },
+                    "isFlameTrapFitted": {
+                      "type": "boolean"
+                    },
+                    "isPressureGuageFitted": {
+                      "type": "boolean"
+                    },
+                    "boreDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pressureSetting": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "vacuumSetting": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pressureGuageRange": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "pressureGuageFrom": {
+                          "type": "integer"
+                        },
+                        "pressureGuageTo": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "pressureGuageFrom",
+                        "pressureGuageTo"
+                      ]
+                    },
+                    "ruptureDisc": {
+                      "type": "object",
+                      "properties": {
+                        "manufacturer": {
+                          "type": "string"
+                        },
+                        "partCode": {
+                          "type": "string"
+                        },
+                        "serialNumber": {
+                          "type": "string"
+                        },
+                        "ruptureSetting": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "value"
+                          ]
+                        },
+                        "pressureGuageRange": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "pressureGuageFrom": {
+                              "type": "integer"
+                            },
+                            "pressureGuageTo": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "pressureGuageFrom",
+                            "pressureGuageTo"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "manufacturer",
+                        "partCode",
+                        "serialNumber",
+                        "ruptureSetting",
+                        "pressureGuageRange"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isRuptureDiscFitted",
+                    "position",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "connectionType",
+                    "isVacuumCombinationType",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isLined",
+                    "liningMaterial",
+                    "isFlameTrapFitted",
+                    "isPressureGuageFitted",
+                    "boreDiameter",
+                    "pressureSetting",
+                    "vacuumSetting",
+                    "pressureGuageRange",
+                    "ruptureDisc"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "isRuptureDiscFitted": {
+                      "type": "boolean"
+                    },
+                    "position": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "connectionType": {
+                      "type": "string"
+                    },
+                    "isVacuumCombinationType": {
+                      "type": "boolean"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningMaterial": {
+                      "type": "string"
+                    },
+                    "isFlameTrapFitted": {
+                      "type": "boolean"
+                    },
+                    "isPressureGuageFitted": {
+                      "type": "boolean"
+                    },
+                    "boreDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pressureSetting": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "vacuumSetting": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pressureGuageRange": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "pressureGuageFrom": {
+                          "type": "integer"
+                        },
+                        "pressureGuageTo": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "pressureGuageFrom",
+                        "pressureGuageTo"
+                      ]
+                    },
+                    "ruptureDisc": {
+                      "type": "object",
+                      "properties": {
+                        "manufacturer": {
+                          "type": "string"
+                        },
+                        "partCode": {
+                          "type": "string"
+                        },
+                        "serialNumber": {
+                          "type": "string"
+                        },
+                        "ruptureSetting": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "value"
+                          ]
+                        },
+                        "pressureGuageRange": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "pressureGuageFrom": {
+                              "type": "integer"
+                            },
+                            "pressureGuageTo": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "pressureGuageFrom",
+                            "pressureGuageTo"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "manufacturer",
+                        "partCode",
+                        "serialNumber",
+                        "ruptureSetting",
+                        "pressureGuageRange"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isRuptureDiscFitted",
+                    "position",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "connectionType",
+                    "isVacuumCombinationType",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isLined",
+                    "liningMaterial",
+                    "isFlameTrapFitted",
+                    "isPressureGuageFitted",
+                    "boreDiameter",
+                    "pressureSetting",
+                    "vacuumSetting",
+                    "pressureGuageRange",
+                    "ruptureDisc"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "reliefValveQuantity",
+            "reliefValves"
+          ]
+        },
+        "valves": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "valveType": {
+                  "type": "string"
+                },
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "isHeated": {
+                  "type": "boolean"
+                },
+                "heatingType": {
+                  "type": "string"
+                },
+                "fitmentPosition": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "partCode": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "terminalConnectionType": {
+                  "type": "string"
+                },
+                "terminalOrientation": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "weldInFlange": {
+                  "type": "object",
+                  "properties": {
+                    "orientation": {
+                      "type": "string"
+                    },
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "centeringPosition": {
+                      "type": "string"
+                    },
+                    "isRecessed": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "standardDesignation": {
+                      "type": "string"
+                    },
+                    "boreDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pitchCircleDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "flangeHoles": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        },
+                        "diameter": {
+                          "type": "integer"
+                        },
+                        "MSize": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "quantity",
+                        "diameter",
+                        "MSize"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "orientation",
+                    "fitmentPosition",
+                    "centeringPosition",
+                    "isRecessed",
+                    "materialType",
+                    "standardDesignation",
+                    "boreDiameter",
+                    "pitchCircleDiameter",
+                    "flangeHoles"
+                  ]
+                },
+                "weldInFlangeGasket": {
+                  "type": "object",
+                  "properties": {
+                    "isIntegral": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "clearanceHeight": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isIntegral",
+                    "materialType",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "clearanceHeight"
+                  ]
+                },
+                "weldInFlangeFasteners": {
+                  "type": "object",
+                  "properties": {
+                    "fastenerType": {
+                      "type": "string"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fastenerType",
+                    "materialType",
+                    "size"
+                  ]
+                },
+                "syphonTube": {
+                  "type": "object",
+                  "properties": {
+                    "isRecessProvision": {
+                      "type": "boolean"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "isGuideFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isSumpFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingType": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    },
+                    "outerDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "tankFloorTerminationGap": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "recess": {
+                      "type": "object",
+                      "properties": {
+                        "partCode": {
+                          "type": "string"
+                        },
+                        "gasket": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "materialType": {
+                              "type": "string"
+                            },
+                            "manufacturer": {
+                              "type": "string"
+                            },
+                            "partCode": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "materialType",
+                            "manufacturer",
+                            "partCode"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "partCode",
+                        "gasket"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isRecessProvision",
+                    "isFitted",
+                    "materialType",
+                    "isGuideFittedAtTankFloor",
+                    "isSumpFittedAtTankFloor",
+                    "isCoated",
+                    "coatingType",
+                    "isLined",
+                    "liningType",
+                    "outerDiameter",
+                    "tankFloorTerminationGap",
+                    "recess"
+                  ]
+                }
+              },
+              "required": [
+                "valveType",
+                "isFitted",
+                "isHeated",
+                "heatingType",
+                "fitmentPosition",
+                "manufacturer",
+                "partCode",
+                "serialNumber",
+                "type",
+                "size",
+                "terminalConnectionType",
+                "terminalOrientation",
+                "materialType",
+                "weldInFlange",
+                "weldInFlangeGasket",
+                "weldInFlangeFasteners",
+                "syphonTube"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "valveType": {
+                  "type": "string"
+                },
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "isHeated": {
+                  "type": "boolean"
+                },
+                "heatingType": {
+                  "type": "string"
+                },
+                "fitmentPosition": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "partCode": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "terminalConnectionType": {
+                  "type": "string"
+                },
+                "terminalOrientation": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "weldInFlange": {
+                  "type": "object",
+                  "properties": {
+                    "orientation": {
+                      "type": "string"
+                    },
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "centeringPosition": {
+                      "type": "string"
+                    },
+                    "isRecessed": {
+                      "type": "boolean"
+                    },
+                    "materialSpecification": {
+                      "type": "string"
+                    },
+                    "standardDesignation": {
+                      "type": "string"
+                    },
+                    "boreDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pitchCircleDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "flangeHoles": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        },
+                        "diameter": {
+                          "type": "integer"
+                        },
+                        "MSize": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "quantity",
+                        "diameter",
+                        "MSize"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "orientation",
+                    "fitmentPosition",
+                    "centeringPosition",
+                    "isRecessed",
+                    "materialSpecification",
+                    "standardDesignation",
+                    "boreDiameter",
+                    "pitchCircleDiameter",
+                    "flangeHoles"
+                  ]
+                },
+                "weldInFlangeGasket": {
+                  "type": "object",
+                  "properties": {
+                    "isIntegral": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "clearanceHeight": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isIntegral",
+                    "materialType",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "clearanceHeight"
+                  ]
+                },
+                "weldInFlangeFasteners": {
+                  "type": "object",
+                  "properties": {
+                    "fastenerType": {
+                      "type": "string"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fastenerType",
+                    "materialType",
+                    "size"
+                  ]
+                },
+                "syphonTube": {
+                  "type": "object",
+                  "properties": {
+                    "isRecessProvision": {
+                      "type": "boolean"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "isGuideFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isSumpFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingType": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    },
+                    "outerDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "tankFloorTerminationGap": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "recess": {
+                      "type": "object",
+                      "properties": {
+                        "partCode": {
+                          "type": "string"
+                        },
+                        "gasket": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "materialType": {
+                              "type": "string"
+                            },
+                            "manufacturer": {
+                              "type": "string"
+                            },
+                            "partCode": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "materialType",
+                            "manufacturer",
+                            "partCode"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "partCode",
+                        "gasket"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isRecessProvision",
+                    "isFitted",
+                    "materialType",
+                    "isGuideFittedAtTankFloor",
+                    "isSumpFittedAtTankFloor",
+                    "isCoated",
+                    "coatingType",
+                    "isLined",
+                    "liningType",
+                    "outerDiameter",
+                    "tankFloorTerminationGap",
+                    "recess"
+                  ]
+                }
+              },
+              "required": [
+                "valveType",
+                "isFitted",
+                "isHeated",
+                "heatingType",
+                "fitmentPosition",
+                "manufacturer",
+                "partCode",
+                "serialNumber",
+                "type",
+                "size",
+                "terminalConnectionType",
+                "terminalOrientation",
+                "materialType",
+                "weldInFlange",
+                "weldInFlangeGasket",
+                "weldInFlangeFasteners",
+                "syphonTube"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "valveType": {
+                  "type": "string"
+                },
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "isHeated": {
+                  "type": "boolean"
+                },
+                "heatingType": {
+                  "type": "string"
+                },
+                "fitmentPosition": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "partCode": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "terminalConnectionType": {
+                  "type": "string"
+                },
+                "terminalOrientation": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "weldInFlange": {
+                  "type": "object",
+                  "properties": {
+                    "orientation": {
+                      "type": "string"
+                    },
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "centeringPosition": {
+                      "type": "string"
+                    },
+                    "isRecessed": {
+                      "type": "boolean"
+                    },
+                    "materialSpecification": {
+                      "type": "string"
+                    },
+                    "standardDesignation": {
+                      "type": "string"
+                    },
+                    "boreDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pitchCircleDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "flangeHoles": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        },
+                        "diameter": {
+                          "type": "integer"
+                        },
+                        "MSize": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "quantity",
+                        "diameter",
+                        "MSize"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "orientation",
+                    "fitmentPosition",
+                    "centeringPosition",
+                    "isRecessed",
+                    "materialSpecification",
+                    "standardDesignation",
+                    "boreDiameter",
+                    "pitchCircleDiameter",
+                    "flangeHoles"
+                  ]
+                },
+                "weldInFlangeGasket": {
+                  "type": "object",
+                  "properties": {
+                    "isIntegral": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "clearanceHeight": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isIntegral",
+                    "materialType",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "clearanceHeight"
+                  ]
+                },
+                "weldInFlangeFasteners": {
+                  "type": "object",
+                  "properties": {
+                    "fastenerType": {
+                      "type": "string"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fastenerType",
+                    "materialType",
+                    "size"
+                  ]
+                },
+                "syphonTube": {
+                  "type": "object",
+                  "properties": {
+                    "isRecessProvision": {
+                      "type": "boolean"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "isGuideFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isSumpFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingType": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    },
+                    "outerDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "tankFloorTerminationGap": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "recess": {
+                      "type": "object",
+                      "properties": {
+                        "partCode": {
+                          "type": "string"
+                        },
+                        "gasket": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "materialType": {
+                              "type": "string"
+                            },
+                            "manufacturer": {
+                              "type": "string"
+                            },
+                            "partCode": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "materialType",
+                            "manufacturer",
+                            "partCode"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "partCode",
+                        "gasket"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isRecessProvision",
+                    "isFitted",
+                    "materialType",
+                    "isGuideFittedAtTankFloor",
+                    "isSumpFittedAtTankFloor",
+                    "isCoated",
+                    "coatingType",
+                    "isLined",
+                    "liningType",
+                    "outerDiameter",
+                    "tankFloorTerminationGap",
+                    "recess"
+                  ]
+                },
+                "topLoadPipe": {
+                  "type": "object",
+                  "properties": {
+                    "isHeated": {
+                      "type": "boolean"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingMaterial": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningMaterial": {
+                      "type": "string"
+                    },
+                    "outerDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "length": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isHeated",
+                    "isFitted",
+                    "materialType",
+                    "isCoated",
+                    "coatingMaterial",
+                    "isLined",
+                    "liningMaterial",
+                    "outerDiameter",
+                    "length"
+                  ]
+                }
+              },
+              "required": [
+                "valveType",
+                "isFitted",
+                "isHeated",
+                "heatingType",
+                "fitmentPosition",
+                "manufacturer",
+                "partCode",
+                "serialNumber",
+                "type",
+                "size",
+                "terminalConnectionType",
+                "terminalOrientation",
+                "materialType",
+                "weldInFlange",
+                "weldInFlangeGasket",
+                "weldInFlangeFasteners",
+                "syphonTube",
+                "topLoadPipe"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "valveType": {
+                  "type": "string"
+                },
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "isHeated": {
+                  "type": "boolean"
+                },
+                "heatingType": {
+                  "type": "string"
+                },
+                "fitmentPosition": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "partCode": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "terminalConnectionType": {
+                  "type": "string"
+                },
+                "terminalOrientation": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "weldInFlange": {
+                  "type": "object",
+                  "properties": {
+                    "orientation": {
+                      "type": "string"
+                    },
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "centeringPosition": {
+                      "type": "string"
+                    },
+                    "isRecessed": {
+                      "type": "boolean"
+                    },
+                    "materialSpecification": {
+                      "type": "string"
+                    },
+                    "standardDesignation": {
+                      "type": "string"
+                    },
+                    "boreDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "pitchCircleDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "flangeHoles": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        },
+                        "diameter": {
+                          "type": "integer"
+                        },
+                        "MSize": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "quantity",
+                        "diameter",
+                        "MSize"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "orientation",
+                    "fitmentPosition",
+                    "centeringPosition",
+                    "isRecessed",
+                    "materialSpecification",
+                    "standardDesignation",
+                    "boreDiameter",
+                    "pitchCircleDiameter",
+                    "flangeHoles"
+                  ]
+                },
+                "weldInFlangeGasket": {
+                  "type": "object",
+                  "properties": {
+                    "isIntegral": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "clearanceHeight": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isIntegral",
+                    "materialType",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "clearanceHeight"
+                  ]
+                },
+                "weldInFlangeFasteners": {
+                  "type": "object",
+                  "properties": {
+                    "fastenerType": {
+                      "type": "string"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "fastenerType",
+                    "materialType",
+                    "size"
+                  ]
+                },
+                "syphonTube": {
+                  "type": "object",
+                  "properties": {
+                    "isRecessProvision": {
+                      "type": "boolean"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "isGuideFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isSumpFittedAtTankFloor": {
+                      "type": "boolean"
+                    },
+                    "isCoated": {
+                      "type": "boolean"
+                    },
+                    "coatingType": {
+                      "type": "string"
+                    },
+                    "isLined": {
+                      "type": "boolean"
+                    },
+                    "liningType": {
+                      "type": "string"
+                    },
+                    "outerDiameter": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "tankFloorTerminationGap": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "recess": {
+                      "type": "object",
+                      "properties": {
+                        "partCode": {
+                          "type": "string"
+                        },
+                        "gasket": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "materialType": {
+                              "type": "string"
+                            },
+                            "manufacturer": {
+                              "type": "string"
+                            },
+                            "partCode": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "materialType",
+                            "manufacturer",
+                            "partCode"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "partCode",
+                        "gasket"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "isRecessProvision",
+                    "isFitted",
+                    "materialType",
+                    "isGuideFittedAtTankFloor",
+                    "isSumpFittedAtTankFloor",
+                    "isCoated",
+                    "coatingType",
+                    "isLined",
+                    "liningType",
+                    "outerDiameter",
+                    "tankFloorTerminationGap",
+                    "recess"
+                  ]
+                }
+              },
+              "required": [
+                "valveType",
+                "isFitted",
+                "isHeated",
+                "heatingType",
+                "fitmentPosition",
+                "manufacturer",
+                "partCode",
+                "serialNumber",
+                "type",
+                "size",
+                "terminalConnectionType",
+                "terminalOrientation",
+                "materialType",
+                "weldInFlange",
+                "weldInFlangeGasket",
+                "weldInFlangeFasteners",
+                "syphonTube"
+              ]
+            }
+          ]
+        },
+        "bottomDischargeAssembly": {
+          "type": "object",
+          "properties": {
+            "gasketMaterialBetweenValves": {
+              "type": "string"
+            },
+            "weldInFlange": {
+              "type": "object",
+              "properties": {
+                "orientation": {
+                  "type": "string"
+                },
+                "fitmentPosition": {
+                  "type": "string"
+                },
+                "centeringPosition": {
+                  "type": "string"
+                },
+                "isRecessed": {
+                  "type": "boolean"
+                },
+                "materialSpecification": {
+                  "type": "string"
+                },
+                "standardDesignation": {
+                  "type": "string"
+                },
+                "boreDiameter": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "pitchCircleDiameter": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "flangeHoles": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "diameter": {
+                      "type": "integer"
+                    },
+                    "MSize": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "quantity",
+                    "diameter",
+                    "MSize"
+                  ]
+                }
+              },
+              "required": [
+                "orientation",
+                "fitmentPosition",
+                "centeringPosition",
+                "isRecessed",
+                "materialSpecification",
+                "standardDesignation",
+                "boreDiameter",
+                "pitchCircleDiameter",
+                "flangeHoles"
+              ]
+            },
+            "weldInFlangeGasket": {
+              "type": "object",
+              "properties": {
+                "isIntegral": {
+                  "type": "boolean"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "parCode": {
+                  "type": "string"
+                },
+                "serialNumber": {
+                  "type": "string"
+                },
+                "clearanceHeight": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "isIntegral",
+                "materialType",
+                "manufacturer",
+                "parCode",
+                "serialNumber",
+                "clearanceHeight"
+              ]
+            },
+            "weldInFlangeFasteners": {
+              "type": "object",
+              "properties": {
+                "fastenerType": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                }
+              },
+              "required": [
+                "fastenerType",
+                "materialType",
+                "size"
+              ]
+            },
+            "valves": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "valveType": {
+                      "type": "string"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "isHeated": {
+                      "type": "boolean"
+                    },
+                    "heatingType": {
+                      "type": "string"
+                    },
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "terminalConnectionType": {
+                      "type": "string"
+                    },
+                    "terminalOrientation": {
+                      "type": "string"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "design": {
+                      "type": "string"
+                    },
+                    "angleInDegrees": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "valveType",
+                    "isFitted",
+                    "isHeated",
+                    "heatingType",
+                    "fitmentPosition",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "type",
+                    "size",
+                    "terminalConnectionType",
+                    "terminalOrientation",
+                    "materialType",
+                    "design",
+                    "angleInDegrees"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "valveType": {
+                      "type": "string"
+                    },
+                    "isFitted": {
+                      "type": "boolean"
+                    },
+                    "isHeated": {
+                      "type": "boolean"
+                    },
+                    "heatingType": {
+                      "type": "string"
+                    },
+                    "fitmentPosition": {
+                      "type": "string"
+                    },
+                    "manufacturer": {
+                      "type": "string"
+                    },
+                    "partCode": {
+                      "type": "string"
+                    },
+                    "serialNumber": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "terminalConnectionType": {
+                      "type": "string"
+                    },
+                    "terminalOrientation": {
+                      "type": "string"
+                    },
+                    "materialType": {
+                      "type": "string"
+                    },
+                    "design": {
+                      "type": "string"
+                    },
+                    "angleInDegrees": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "valveType",
+                    "isFitted",
+                    "isHeated",
+                    "heatingType",
+                    "fitmentPosition",
+                    "manufacturer",
+                    "partCode",
+                    "serialNumber",
+                    "type",
+                    "size",
+                    "terminalConnectionType",
+                    "terminalOrientation",
+                    "materialType",
+                    "design",
+                    "angleInDegrees"
+                  ]
+                }
+              ]
+            },
+            "thirdClosure": {
+              "type": "object",
+              "properties": {
+                "terminationType": {
+                  "type": "string"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "cap": {
+                  "type": "object",
+                  "properties": {
+                    "threadType": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "threadType",
+                    "size"
+                  ]
+                },
+                "flangeType": {
+                  "type": "string"
+                },
+                "flangeDesignation": {
+                  "type": "string"
+                },
+                "otherClosureDetail": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "terminationType",
+                "materialType",
+                "manufacturer",
+                "cap",
+                "flangeType",
+                "flangeDesignation",
+                "otherClosureDetail"
+              ]
+            },
+            "fusibleLink": {
+              "type": "object",
+              "properties": {
+                "isFitted": {
+                  "type": "string"
+                },
+                "lastCheckDate": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "isFitted",
+                "lastCheckDate"
+              ]
+            },
+            "emergencyClosureCable": {
+              "type": "object",
+              "properties": {
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "fitmentPosition": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "isFitted",
+                "fitmentPosition"
+              ]
+            }
+          },
+          "required": [
+            "gasketMaterialBetweenValves",
+            "weldInFlange",
+            "weldInFlangeGasket",
+            "weldInFlangeFasteners",
+            "valves",
+            "thirdClosure",
+            "fusibleLink",
+            "emergencyClosureCable"
+          ]
+        },
+        "valveCabinets": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "fitmentPosition": {
+                  "type": "string"
+                },
+                "isFitted": {
+                  "type": "boolean"
+                },
+                "isInsulated": {
+                  "type": "boolean"
+                },
+                "isDoorLidFitted": {
+                  "type": "boolean"
+                },
+                "materialType": {
+                  "type": "string"
+                },
+                "customsSealCompatible": {
+                  "type": "boolean"
+                },
+                "locationsOnContainer": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "location": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "location"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "location": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "location"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "fitmentPosition",
+                "isFitted",
+                "isInsulated",
+                "isDoorLidFitted",
+                "materialType",
+                "customsSealCompatible",
+                "locationsOnContainer"
+              ]
+            }
+          ]
+        },
+        "heatingAndCooling": {
+          "type": "object",
+          "properties": {
+            "isSteamHeatingFitted": {
+              "type": "boolean"
+            },
+            "isElectricBlanketHeatingFitted": {
+              "type": "boolean"
+            },
+            "isElectricGlycoldHeatingFitted": {
+              "type": "boolean"
+            },
+            "isElectricGlycolHeatingAndCoolingFitted": {
+              "type": "boolean"
+            },
+            "steamHeatingSystem": {
+              "type": "object",
+              "properties": {
+                "numberOfSteamRuns": {
+                  "type": "integer"
+                },
+                "steamRunMaterialType": {
+                  "type": "string"
+                },
+                "isDrainValveFitted": {
+                  "type": "boolean"
+                },
+                "effectiveHeatingArea": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "isAdditionalCircuitFitted": {
+                  "type": "boolean"
+                },
+                "additionalCircuits": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    }
+                  ]
+                },
+                "maximumWorkingPressure": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "maximumTestPressure": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "isSafetyReliefValveFitted": {
+                  "type": "boolean"
+                },
+                "safetyReliefValvePressureSetting": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "steamTube": {
+                  "type": "object",
+                  "properties": {
+                    "inletConnection": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "value"
+                          ]
+                        },
+                        "location": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "size",
+                        "location"
+                      ]
+                    },
+                    "outletConnection": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "object",
+                          "properties": {
+                            "unit": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "integer"
+                            }
+                          },
+                          "required": [
+                            "unit",
+                            "value"
+                          ]
+                        },
+                        "location": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "size",
+                        "location"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "inletConnection",
+                    "outletConnection"
+                  ]
+                },
+                "drainValve": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "isSteamTrapFitted": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "size",
+                    "isSteamTrapFitted"
+                  ]
+                }
+              },
+              "required": [
+                "numberOfSteamRuns",
+                "steamRunMaterialType",
+                "isDrainValveFitted",
+                "effectiveHeatingArea",
+                "isAdditionalCircuitFitted",
+                "additionalCircuits",
+                "maximumWorkingPressure",
+                "maximumTestPressure",
+                "isSafetyReliefValveFitted",
+                "safetyReliefValvePressureSetting",
+                "steamTube",
+                "drainValve"
+              ]
+            },
+            "electricBlanketHeatingSystem": {
+              "type": "object",
+              "properties": {
+                "manufacturer": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "effectiveHeatingArea": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "isAdditionalAreaCovered": {
+                  "type": "boolean"
+                },
+                "additionalAreas": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    }
+                  ]
+                },
+                "powerRating": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "temperatureRange": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "temperatureFrom": {
+                      "type": "integer"
+                    },
+                    "temperatureTo": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "temperatureFrom",
+                    "temperatureTo"
+                  ]
+                },
+                "isPowerCableIncluded": {
+                  "type": "boolean"
+                },
+                "cableLength": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "plug": {
+                  "type": "object",
+                  "properties": {
+                    "IPRating": {
+                      "type": "string"
+                    },
+                    "numberOfPins": {
+                      "type": "integer"
+                    },
+                    "amperage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "IPRating",
+                    "numberOfPins",
+                    "amperage"
+                  ]
+                }
+              },
+              "required": [
+                "manufacturer",
+                "type",
+                "model",
+                "effectiveHeatingArea",
+                "isAdditionalAreaCovered",
+                "additionalAreas",
+                "powerRating",
+                "temperatureRange",
+                "isPowerCableIncluded",
+                "cableLength",
+                "plug"
+              ]
+            },
+            "electricGlycolHeatingSystem": {
+              "type": "object",
+              "properties": {
+                "manufacturer": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "glycolType": {
+                  "type": "string"
+                },
+                "systemFillingCapacity": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "effectiveHeatingArea": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "isAdditionalAreaCovered": {
+                  "type": "boolean"
+                },
+                "additionalAreas": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    }
+                  ]
+                },
+                "powerRating": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "temperatureRange": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "temperatureFrom": {
+                      "type": "integer"
+                    },
+                    "temperatureTo": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "temperatureFrom",
+                    "temperatureTo"
+                  ]
+                },
+                "isPowerCableIncluded": {
+                  "type": "boolean"
+                },
+                "cableLength": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "plug": {
+                  "type": "object",
+                  "properties": {
+                    "IPRating": {
+                      "type": "string"
+                    },
+                    "numberOfPins": {
+                      "type": "integer"
+                    },
+                    "amperage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "IPRating",
+                    "numberOfPins",
+                    "amperage"
+                  ]
+                }
+              },
+              "required": [
+                "manufacturer",
+                "type",
+                "model",
+                "glycolType",
+                "systemFillingCapacity",
+                "effectiveHeatingArea",
+                "isAdditionalAreaCovered",
+                "additionalAreas",
+                "powerRating",
+                "temperatureRange",
+                "isPowerCableIncluded",
+                "cableLength",
+                "plug"
+              ]
+            },
+            "electricGlycolHeatingAndCoolingSystem": {
+              "type": "object",
+              "properties": {
+                "isHybridPowerEmployed": {
+                  "type": "boolean"
+                },
+                "isGensetFitted": {
+                  "type": "boolean"
+                },
+                "manufacturer": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "glycolType": {
+                  "type": "string"
+                },
+                "systemFillingCapacity": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "effectiveHeatingArea": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "isAdditionalAreaCovered": {
+                  "type": "boolean"
+                },
+                "additionalAreas": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "fitmentLocation": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "fitmentLocation"
+                      ]
+                    }
+                  ]
+                },
+                "powerRating": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "temperatureRange": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "temperatureFrom": {
+                      "type": "integer"
+                    },
+                    "temperatureTo": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "temperatureFrom",
+                    "temperatureTo"
+                  ]
+                },
+                "isPowerCableIncluded": {
+                  "type": "boolean"
+                },
+                "cableLength": {
+                  "type": "object",
+                  "properties": {
+                    "unit": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "unit",
+                    "value"
+                  ]
+                },
+                "plug": {
+                  "type": "object",
+                  "properties": {
+                    "IPRating": {
+                      "type": "string"
+                    },
+                    "numberOfPins": {
+                      "type": "integer"
+                    },
+                    "amperage": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "IPRating",
+                    "numberOfPins",
+                    "amperage"
+                  ]
+                },
+                "cooling": {
+                  "type": "object",
+                  "properties": {
+                    "refrigerantType": {
+                      "type": "string"
+                    },
+                    "refridgerantGrade": {
+                      "type": "string"
+                    },
+                    "effectiveCoolingArea": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "powerRating": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    },
+                    "batteryType": {
+                      "type": "string"
+                    },
+                    "batteryCapacity": {
+                      "type": "object",
+                      "properties": {
+                        "unit": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "unit",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "refrigerantType",
+                    "refridgerantGrade",
+                    "effectiveCoolingArea",
+                    "powerRating",
+                    "batteryType",
+                    "batteryCapacity"
+                  ]
+                }
+              },
+              "required": [
+                "isHybridPowerEmployed",
+                "isGensetFitted",
+                "manufacturer",
+                "type",
+                "model",
+                "glycolType",
+                "systemFillingCapacity",
+                "effectiveHeatingArea",
+                "isAdditionalAreaCovered",
+                "additionalAreas",
+                "powerRating",
+                "temperatureRange",
+                "isPowerCableIncluded",
+                "cableLength",
+                "plug",
+                "cooling"
+              ]
+            }
+          },
+          "required": [
+            "isSteamHeatingFitted",
+            "isElectricBlanketHeatingFitted",
+            "isElectricGlycoldHeatingFitted",
+            "isElectricGlycolHeatingAndCoolingFitted",
+            "steamHeatingSystem",
+            "electricBlanketHeatingSystem",
+            "electricGlycolHeatingSystem",
+            "electricGlycolHeatingAndCoolingSystem"
+          ]
+        },
+        "accesoriesAndNonValveComponents": {
+          "type": "object",
+          "properties": {
+            "specialistTankAccesories": {
+              "type": "object",
+              "properties": {
+                "isBreatherFitted": {
+                  "type": "boolean"
+                },
+                "isTrackingDeviceProvision": {
+                  "type": "boolean"
+                },
+                "isPoweredTrackingDeviceFitted": {
+                  "type": "boolean"
+                },
+                "isUnpoweredTransponderFitted": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "isBreatherFitted",
+                "isTrackingDeviceProvision",
+                "isPoweredTrackingDeviceFitted",
+                "isUnpoweredTransponderFitted"
+              ]
+            },
+            "temperatureMeasurement": {
+              "type": "object",
+              "properties": {
+                "shellSurfaceTemperatureGuageType": {
+                  "type": "string"
+                },
+                "liquidCoreTemperatureSensorFitted": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "shellSurfaceTemperatureGuageType",
+                "liquidCoreTemperatureSensorFitted"
+              ]
+            },
+            "isPressureSensorFitted": {
+              "type": "boolean"
+            },
+            "isLiquidSensorFitted": {
+              "type": "boolean"
+            },
+            "isLeakageDetectionSensorFitted": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "specialistTankAccesories",
+            "temperatureMeasurement",
+            "isPressureSensorFitted",
+            "isLiquidSensorFitted",
+            "isLeakageDetectionSensorFitted"
+          ]
+        }
+      },
+      "required": [
+        "tankBasicInformation",
+        "exteriorMarkings",
+        "tankShell",
+        "frame",
+        "walkwayAndLadders",
+        "insulationAndCladding",
+        "spillBoxesAndCompartments",
+        "manway",
+        "safetyReliefValves",
+        "valves",
+        "bottomDischargeAssembly",
+        "valveCabinets",
+        "heatingAndCooling",
+        "accesoriesAndNonValveComponents"
+      ]
+    }
+  },
+  "required": [
+    "ISOTankDigitalTwin"
+  ]
+}
