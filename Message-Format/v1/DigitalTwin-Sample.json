@@ -1,7 +1,7 @@
 {
   "ISOTankDigitalTwin": {
     "digitalTwin": {
-      "lastUpdatedDate": "YYYY-MM-DD",
+      "lastUpdatedDate": "2024-11-15",
       "version": "1.00"
     },
     "tankBasicInformation": {
@@ -9,8 +9,8 @@
         "manufacturerSerialNumber": "A123456789",
         "manufacturerName": "ABC Container Factory Co",
         "manufactureDate": "2022-12-20",
-        "initialCertificateIssuanceDate": "YYYY-MM-DD",
-        "initialHydraulicTestDate": "YYYY-MM-DD",
+        "initialCertificateIssuanceDate": "2023-01-20",
+        "initialHydraulicTestDate": "2023-01-18",
         "BICCode": "RTNU",
         "serialNumber": "123456",
         "checkDigit": "5",
@@ -21,12 +21,12 @@
         {
           "testType": "2.5 year",
           "testPerformed": "pressure",
-          "testDate": "YYYY-MM-DD"
+          "testDate": "2024-06-15"
         },
         {
           "testType": "5 year",
           "testPerformed": "hydraulic",
-          "testDate": "YYYY-MM-DD"
+          "testDate": "2026-01-15"
         }
       ],
       "designSpecification": {
@@ -372,7 +372,7 @@
     },
     "spillBoxesAndCompartments": {
       "isSpillBoxFitted": true,
-      "numberOfSpillBoxes": 6,
+      "numberOfSpillBoxes": 4,
       "spillBoxDetails": [
         {
           "fitmentLocation": "rear",
@@ -464,7 +464,7 @@
       "isDipstickBracketFitted": true,
       "isDipstickFitted": true,
       "isBaffleHatchFitted": true,
-      "quantityOfBaffleHatches": 2,
+      "quantityOfBaffleHatches": 3,
       "manlid": {
         "closureType": "hinged",
         "handNutType": "wingnuts",
@@ -475,7 +475,7 @@
           "diameter": 500.27
         },
         "gasketMaterial": "viton",
-        "isInsulatationFitted": true,
+        "isInsulationFitted": true,
         "insulationMaterial": "rockwool",
         "isCoated": true,
         "isLined": true,
@@ -502,7 +502,7 @@
           "liningMaterial": "rubber"
         },
         {
-          "location": "front",
+          "location": "rear",
           "closureType": "hinged",
           "handNutType": "hexagon nuts",
           "handNutMaterial": "stainless steel",
@@ -659,7 +659,7 @@
           "fitmentLocation": "rear sill box",
           "centeringPosition": "centre-line",
           "isRecessed": true,
-          "materialType": "1.4404",
+          "materialSpecification": "1.4404",
           "standardDesignation": "DN 80",
           "boreDiameter": {
             "unit": "MMT",
@@ -836,7 +836,7 @@
           "materialSpecification": "1.4404",
           "standardDesignation": "DN 80",
           "boreDiameter": {
-            "unit": "T",
+            "unit": "MMT",
             "value": 123
           },
           "pitchCircleDiameter": {
@@ -1105,7 +1105,7 @@
       },
       "fusibleLink": {
         "isFitted": "provision",
-        "lastCheckDate": "YYYY-MM-DD"
+        "lastCheckDate": "2024-08-22"
       },
       "emergencyClosureCable": {
         "isFitted": true,
@@ -1316,7 +1316,7 @@
         },
         "cooling": {
           "refrigerantType": "",
-          "refridgerantGrade": "",
+          "refrigerantGrade": "",
           "effectiveCoolingArea": {
             "unit": "MTK",
             "value": 50.4
@@ -1333,8 +1333,8 @@
         }
       }
     },
-    "accesoriesAndNonValveComponents": {
-      "specialistTankAccesories": {
+    "accessoriesAndNonValveComponents": {
+      "specialistTankAccessories": {
         "isBreatherFitted": true,
         "isTrackingDeviceProvision": true,
         "isPoweredTrackingDeviceFitted": true,
