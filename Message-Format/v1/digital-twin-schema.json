@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "version": "1.0.1",
   "type": "object",
   "properties": {
     "ISOTankDigitalTwin": {
@@ -11,7 +12,7 @@
             "assetIdentification": {
               "type": "object",
               "properties": {
-                "manufacturerSeialNumber": {
+                "manufacturerSerialNumber": {
                   "type": "string"
                 },
                 "manufacturerName": {
@@ -43,7 +44,7 @@
                 }
               },
               "required": [
-                "manufacturerSeialNumber",
+                "manufacturerSerialNumber",
                 "manufacturerName",
                 "manufactureDate",
                 "initialCertificateIssuanceDate",
@@ -127,7 +128,7 @@
                     "value"
                   ]
                 },
-                "maxiumuExternalPressure": {
+                "maximumExternalPressure": {
                   "type": "object",
                   "properties": {
                     "unit": {
@@ -502,7 +503,7 @@
                 "maximumCapacity",
                 "maximumGrossWeight",
                 "maximumPayload",
-                "maxiumuExternalPressure",
+                "maximumExternalPressure",
                 "maximumVesselTemperature",
                 "minimumVesselTemperature",
                 "typeApprovals"
